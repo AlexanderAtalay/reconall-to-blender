@@ -1,0 +1,52 @@
+{
+    "frontal": [
+        "caudalmiddlefrontal",
+        "lateralorbitofrontal",
+        "medialorbitofrontal",
+        "rostralmiddlefrontal",
+        "superiorfrontal",
+        "frontalpole",
+        "parsopercularis",
+        "parsorbitalis",
+        "parstriangularisprecentral",
+        "paracentral"
+    ],
+    "motor": [
+        "precentral",
+        "paracentral"
+    ],
+    "prefrontal": [
+        "caudalmiddlefrontal",
+        "lateralorbitofrontal",
+        "medialorbitofrontal",
+        "rostralmiddlefrontal",
+        "superiorfrontal",
+        "frontalpole",
+        "parsopercularis",
+        "parsorbitalis"
+    ],
+    "parietal": [
+        "inferiorparietal",
+        "precuneus",
+        "superiorparietal",
+        "supramarginal",
+        "postcentral",
+        "paracentral"
+    ],
+    "temporal": [
+        "inferiortemporal",
+        "middletemporal",
+        "superiortemporal",
+        "bankssts",
+        "fusiform",
+        "transversetemporal",
+        "temporalpole",
+        "entorhinal"
+    ],
+    "occipital": [
+        "cuneus",
+        "lingual",
+        "pericalcarine",
+        "lateraloccipital"
+    ]
+}
