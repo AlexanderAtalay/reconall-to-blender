@@ -11,10 +11,10 @@ import numpy as np
 import nibabel as nib
 
 
-with open('/autofs/space/nicc_003/users/xander/code/neuroviz/aseg_tools/region_labels.json', 'r') as label_json_path:
+with open('/autofs/space/nicc_003/users/xander/code/neuroviz/reconall-to-blender/aseg_tools/region_labels.json', 'r') as label_json_path:
     region_labels = json.load(label_json_path)
 
-with open('/autofs/space/nicc_003/users/xander/code/neuroviz/aseg_tools/aseg_labels.json', 'r') as aseg_label_path:
+with open('/autofs/space/nicc_003/users/xander/code/neuroviz/reconall-to-blender/aseg_tools/aseg_labels.json', 'r') as aseg_label_path:
     aseg_labels = json.load(aseg_label_path)
 
 
@@ -254,7 +254,7 @@ def convert_aseg_to_surface(recon_all_dir, output_dir, aseg_label, label_index):
     nii2obj(nifti_output, output_object)
     rotate_mesh(output_object, 90)
     scale_mesh(output_object, 0.1)
-    translate_mesh(output_object, -0.26, -0.5, -3.2)
+    translate_mesh(output_object, 0, 0, 0) 
     
     shutil.rmtree(f'{output_dir}/tmp')
 
@@ -316,7 +316,7 @@ def convert_bilateral_srf_to_obj(surface, input_dir, output_dir, log=None):
     convert_srf_to_obj(combined_srf_path, combined_obj_path)
     rotate_mesh(combined_obj_path, 90)
     scale_mesh(combined_obj_path, 0.1)
-    translate_mesh(combined_obj_path, 0, -2.0, -1.5)
+    translate_mesh(combined_obj_path, 0, 0, 0)
     
     for srf_path in surface_hemis.values():
         os.remove(srf_path)
@@ -379,7 +379,8 @@ def main():
 
     args = parser.parse_args()
 
-    reconall_to_objects(args.recon_all_dir, args.output_dir, args.log)
+    reconall_to_objects(args.input, args.output, args.log)
 
 if __name__ == "__main__":
     main()
+
