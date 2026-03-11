@@ -2,7 +2,7 @@
 
 A Python pipeline to convert FreeSurfer `recon-all` output into Wavefront OBJ files for neuroimaging visualization.
 
-![alt text](https://github.com/AlexanderAtalay/reconall-to-blender/.brainwaves.png "White surface rendered in Blender")
+![alt text](https://github.com/AlexanderAtalay/reconall-to-blender/.brainwaves.jpg "White surface rendered in Blender")
 
 ## Overview
 
